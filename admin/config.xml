@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: farmaci25.xml 14 2009-11-02 18:35:20Z chdemko $ -->
+<config>
+	<fieldset
+		name="basedir"
+		label="CONFIG_GREETING_SETTINGS_LABEL"
+		description="CONFIG_GREETING_SETTINGS_DESC"
+	>
+		<field
+			name="baseasl5"
+			type="text"
+			label="BASEASL5_LABEL"
+			description="BASEASL5_DESC"
+			default="/cfo/scpcfousl/"
+		/>			
+		<field
+			name="baseestav"
+			type="text"
+			label="BASEESTAV_LABEL"
+			description="BASEESTAV_DESC"
+			default="/cfo/scpcfoestav/"
+		/>
+		<field
+			name="baseatc"
+			type="text"
+			label="BASEATC_LABEL"
+			description="BASEATC_DESC"
+			default="/cfo/scpcfousl/atc/"
+		/>
+		
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIGFARMACO_PERMISSIONS_LABEL"
+		description="JCONFIGFARMACO_PERMISSIONS_LABEL"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIGFARMACO_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_todolist"
+			section="component"
+		/>
+	</fieldset>
+</config>
+
